@@ -23,6 +23,10 @@ class Biography extends Component {
         })
     };
 
+    changePage = () => {
+        window.location = `#/attributes`
+    }
+
   render() {
     return (
         <div>
@@ -45,7 +49,7 @@ class Biography extends Component {
             <br />
             <label>Generation:</label><input type="text" value={this.state.generation} onChange={this.handleChange("generation")}></input>
             <br />
-            <button>Submit Biographical Information</button>
+            <button onclick={this.changePage}>Submit Biographical Information</button>
         </div>
     );
   }

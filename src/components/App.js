@@ -8,6 +8,7 @@ import {
   Switch,
 } from 'react-router-dom';
 import Home from "./Home";
+import Attributes from "./Attributes"
 
 function App() {
   return (
@@ -25,6 +26,11 @@ function App() {
               exact
               path="/biography"
               component={Biography}
+            />
+            <Route
+              exact
+              path="/attributes"
+              component={Attributes}
             />
           <Route render={() => <h1>404</h1>} />
         </Switch>
