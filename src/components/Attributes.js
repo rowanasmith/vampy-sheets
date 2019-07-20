@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 // import { connect } from "react-redux";
+import Selector from './Select'
 
-class Biography extends Component {
+class Attributes extends Component {
 
     state = {
         strength: 0,
@@ -22,6 +23,10 @@ class Biography extends Component {
             [propertyName]: event.target.value
         })
     };
+
+    changePage = () => {
+        window.location = `#/skills`
+    }
 
   render() {
     return (
@@ -120,6 +125,7 @@ class Biography extends Component {
                     <option value="5">5</option>
                 </select>
                 <br />
+                <button onClick={this.changePage}>Submit Attributes</button>
         </div>
     );
   }
@@ -130,4 +136,4 @@ class Biography extends Component {
 // });
 
 
-export default Biography;
+export default Attributes;

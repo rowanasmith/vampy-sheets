@@ -49,7 +49,7 @@ class Biography extends Component {
             <br />
             <label>Generation:</label><input type="text" value={this.state.generation} onChange={this.handleChange("generation")}></input>
             <br />
-            <button onclick={this.changePage}>Submit Biographical Information</button>
+            <button onClick={this.changePage}>Submit Biographical Information</button>
         </div>
     );
   }

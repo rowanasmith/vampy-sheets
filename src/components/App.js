@@ -1,6 +1,5 @@
 import React from "react";
 // import '../styles/App.css';
-import Biography from "./Biography";
 import {
   HashRouter as Router,
   Route,
@@ -9,6 +8,8 @@ import {
 } from 'react-router-dom';
 import Home from "./Home";
 import Attributes from "./Attributes"
+import Biography from "./Biography";
+
 
 function App() {
   return (
