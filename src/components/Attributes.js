@@ -31,6 +31,7 @@ class Attributes extends Component {
   render() {
     return (
         <div>
+            <h1>Attributes</h1>
             <p>{JSON.stringify(this.state)}</p>
             <h3>Physical:</h3>
             <label>Strength</label>

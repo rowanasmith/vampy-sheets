@@ -30,6 +30,7 @@ class Biography extends Component {
   render() {
     return (
         <div>
+            <h1>Biographical Information</h1>
             <p>{JSON.stringify(this.state)}</p>
             <label>Name:</label><input type="text" value={this.state.name} onChange={this.handleChange("name")}></input>
             <br />

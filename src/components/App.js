@@ -1,5 +1,5 @@
 import React from "react";
-// import '../styles/App.css';
+import './App.css';
 import {
   HashRouter as Router,
   Route,
@@ -9,6 +9,7 @@ import {
 import Home from "./Home";
 import Attributes from "./Attributes"
 import Biography from "./Biography";
+import Skills from "./Skills";
 
 
 function App() {
@@ -33,6 +34,11 @@ function App() {
               path="/attributes"
               component={Attributes}
             />
+            <Route
+              exact
+              path="/skills"
+              component={Skills}
+              />
           <Route render={() => <h1>404</h1>} />
         </Switch>
       </div>
